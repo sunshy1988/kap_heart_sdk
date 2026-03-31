@@ -1,0 +1,153 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KapHeartSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AVFAudio
+import CoreBluetooth
+import CryptoKit
+import Foundation
+import Network
+import NetworkExtension
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public enum MetadataType : Swift.UInt8 {
+  case unknown
+  case txt
+  case image
+  case audio
+  case binay
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.UInt8)
+  #endif
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public struct FileMetadata {
+  public var type: KapHeartSDK.MetadataType
+  public var filename: Swift.String?
+  public var fileSize: Swift.UInt32
+  public var timestamp: Swift.UInt32
+}
+public struct WifiInfo : Swift.Codable {
+  public var ssid: Swift.String
+  public var password: Swift.String
+  public init(name: Swift.String, passworld: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Ota45FileInfo {
+  public var aiglass_upgrade_file: Foundation.URL
+  public var aiglass_upgrade_ars45_file: Foundation.URL
+  public init(aiglass_upgrade_file: Foundation.URL, aiglass_upgrade_ars45_file: Foundation.URL)
+}
+public enum CameraCaptureProfile : Swift.UInt8, Swift.Codable {
+  case kProfile_1920_1080
+  case kProfile_1280_720
+  case kProfile_640_480
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.UInt8)
+  #endif
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public struct CameraCaptureParams : Swift.Codable {
+  public var profile: KapHeartSDK.CameraCaptureProfile
+  public var freq: Swift.Float16
+  public init(profile: KapHeartSDK.CameraCaptureProfile, freq: Swift.Float16)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol FileReceiver : AnyObject {
+  func didReceivedFile(metadata: KapHeartSDK.FileMetadata, path: Foundation.URL)
+}
+public protocol KapHeartManagerDelegate : AnyObject {
+  func kapHeartManagerDidStartScan(_ manager: KapHeartSDK.KapHeartManager)
+  func kapHeartManagerDidStopScan(_ manager: KapHeartSDK.KapHeartManager)
+  func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, discoveryed device: KapHeartSDK.KapHeartDevice)
+  func kapHeartManager(_manager: KapHeartSDK.KapHeartManager, didConnected device: KapHeartSDK.KapHeartDevice)
+  func kapHeartManager(_manager: KapHeartSDK.KapHeartManager, didDisconnected device: KapHeartSDK.KapHeartDevice)
+}
+@_hasMissingDesignatedInitializers public class KapHeartDevice : Swift.Equatable {
+  public static func == (lhs: KapHeartSDK.KapHeartDevice, rhs: KapHeartSDK.KapHeartDevice) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var name: Swift.String? {
+    get
+  }
+  #endif
+  @objc deinit
+}
+public enum KapErrorCode : Swift.Int {
+  case kSuccessed
+  case kUnknowError
+  case kDeivceNotConnect
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class KapHeartManager {
+  public static let shareInstance: KapHeartSDK.KapHeartManager
+  weak public var delegate: (any KapHeartSDK.KapHeartManagerDelegate)?
+  weak public var fileReceiver: (any KapHeartSDK.FileReceiver)?
+  public func startScanDevice() -> KapHeartSDK.KapErrorCode
+  public func stopScanDevice() -> KapHeartSDK.KapErrorCode
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func connectDevice(device: KapHeartSDK.KapHeartDevice, complete: ((_ code: KapHeartSDK.KapErrorCode) -> Swift.Void)?)
+  #endif
+  public func disconnectDevice(device: KapHeartSDK.KapHeartDevice)
+  public typealias Response = (_ code: KapHeartSDK.KapErrorCode) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setCameraCaptureParam(_ param: KapHeartSDK.CameraCaptureParams, response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  public typealias CameraCaptureParamResponse = (_ code: KapHeartSDK.KapErrorCode, _ param: KapHeartSDK.CameraCaptureParams?) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getCameraCaptureParam(response: KapHeartSDK.KapHeartManager.CameraCaptureParamResponse?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func startCameraCapture(response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stopCameraCaputre(response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func startAudioCapture(response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stopAudioCaputre(response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func connectWifi(wifi: KapHeartSDK.WifiInfo, response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func disConnectWifi(response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  public typealias OTAProgressBlock = (_ total: Swift.Int, _ uploaded: Swift.Int) -> Swift.Void
+  public typealias OTACompleteBlock = (_ code: KapHeartSDK.KapErrorCode) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func startOta2800(filePath: Foundation.URL, with progress: KapHeartSDK.KapHeartManager.OTAProgressBlock?, and complete: KapHeartSDK.KapHeartManager.OTACompleteBlock?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func startOta45(fileInfo: KapHeartSDK.Ota45FileInfo, with progress: KapHeartSDK.KapHeartManager.OTAProgressBlock?, and complete: KapHeartSDK.KapHeartManager.OTACompleteBlock?)
+  #endif
+  @objc deinit
+}
+extension KapHeartSDK.MetadataType : Swift.Equatable {}
+extension KapHeartSDK.MetadataType : Swift.Hashable {}
+extension KapHeartSDK.MetadataType : Swift.RawRepresentable {}
+extension KapHeartSDK.CameraCaptureProfile : Swift.Equatable {}
+extension KapHeartSDK.CameraCaptureProfile : Swift.Hashable {}
+extension KapHeartSDK.CameraCaptureProfile : Swift.RawRepresentable {}
+extension KapHeartSDK.KapErrorCode : Swift.Equatable {}
+extension KapHeartSDK.KapErrorCode : Swift.Hashable {}
+extension KapHeartSDK.KapErrorCode : Swift.RawRepresentable {}
