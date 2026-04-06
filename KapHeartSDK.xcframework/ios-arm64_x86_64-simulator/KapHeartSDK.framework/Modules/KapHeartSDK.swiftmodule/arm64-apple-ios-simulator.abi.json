@@ -2609,6 +2609,67 @@
         "children": [
           {
             "kind": "Var",
+            "name": "commandChannel",
+            "printedName": "commandChannel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any KapHeartSDK.ICommandChannel)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ICommandChannel",
+                    "printedName": "any KapHeartSDK.ICommandChannel",
+                    "usr": "s:11KapHeartSDK15ICommandChannelP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK0aB7ManagerC14commandChannelAA08ICommandF0_pSgvp",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC14commandChannelAA08ICommandF0_pSgvp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any KapHeartSDK.ICommandChannel)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ICommandChannel",
+                        "printedName": "any KapHeartSDK.ICommandChannel",
+                        "usr": "s:11KapHeartSDK15ICommandChannelP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB7ManagerC14commandChannelAA08ICommandF0_pSgvg",
+                "mangledName": "$s11KapHeartSDK0aB7ManagerC14commandChannelAA08ICommandF0_pSgvg",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "shareInstance",
             "printedName": "shareInstance",
             "children": [
@@ -3714,6 +3775,371 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ICommandChannel",
+        "printedName": "ICommandChannel",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sendCommand",
+            "printedName": "sendCommand(cmd:param:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.Data?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.Data?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.Data?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK15ICommandChannelP11sendCommand3cmd5param8responseys5UInt8V_10Foundation4DataVSgySb_AMtcSgtF",
+            "mangledName": "$s11KapHeartSDK15ICommandChannelP11sendCommand3cmd5param8responseys5UInt8V_10Foundation4DataVSgySb_AMtcSgtF",
+            "moduleName": "KapHeartSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : KapHeartSDK.ICommandChannel>",
+            "sugared_genericSig": "<Self where Self : KapHeartSDK.ICommandChannel>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendCommand",
+            "printedName": "sendCommand(cmd:param:progress:complete:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Int, Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Int, Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(((any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "((any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, Foundation.Data?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, Foundation.Data?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, Foundation.Data?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK15ICommandChannelP11sendCommand3cmd5param8progress8complete8responseys5UInt8V_10Foundation4DataVSgySi_SitcSgys5Error_pSgcSgySb_AOtcSgtF",
+            "mangledName": "$s11KapHeartSDK15ICommandChannelP11sendCommand3cmd5param8progress8complete8responseys5UInt8V_10Foundation4DataVSgySi_SitcSgys5Error_pSgcSgySb_AOtcSgtF",
+            "moduleName": "KapHeartSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : KapHeartSDK.ICommandChannel>",
+            "sugared_genericSig": "<Self where Self : KapHeartSDK.ICommandChannel>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendCommandWithJson",
+            "printedName": "sendCommandWithJson(cmd:param:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_1_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Bool, τ_1_1?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool, τ_1_1?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Bool, τ_1_1?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "τ_1_1?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "GenericTypeParam",
+                                "printedName": "τ_1_1"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK15ICommandChannelP19sendCommandWithJson3cmd5param8responseys5UInt8V_qd__SgySb_qd_0_SgtcSgtSERd__SeRd_0_r0_lF",
+            "mangledName": "$s11KapHeartSDK15ICommandChannelP19sendCommandWithJson3cmd5param8responseys5UInt8V_qd__SgySb_qd_0_SgtcSgtSERd__SeRd_0_r0_lF",
+            "moduleName": "KapHeartSDK",
+            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 : KapHeartSDK.ICommandChannel, τ_1_0 : Swift.Encodable, τ_1_1 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, P, R where Self : KapHeartSDK.ICommandChannel, P : Swift.Encodable, R : Swift.Decodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11KapHeartSDK15ICommandChannelP",
+        "mangledName": "$s11KapHeartSDK15ICommandChannelP",
+        "moduleName": "KapHeartSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -4464,21 +4890,35 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 830,
+      "offset": 217,
+      "length": 4,
+      "value": "0xFD"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 241,
+      "length": 4,
+      "value": "0xFE"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1106,
       "length": 4,
       "value": "0x10"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 863,
+      "offset": 1139,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 896,
+      "offset": 1172,
       "length": 4,
       "value": "0x03"
     }

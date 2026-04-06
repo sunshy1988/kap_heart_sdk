@@ -97,6 +97,9 @@ public enum KapErrorCode : Swift.Int {
   }
 }
 @_hasMissingDesignatedInitializers public class KapHeartManager {
+  public var commandChannel: (any KapHeartSDK.ICommandChannel)? {
+    get
+  }
   public static let shareInstance: KapHeartSDK.KapHeartManager
   weak public var delegate: (any KapHeartSDK.KapHeartManagerDelegate)?
   weak public var fileReceiver: (any KapHeartSDK.FileReceiver)?
@@ -141,6 +144,21 @@ public enum KapErrorCode : Swift.Int {
   public func startOta45(fileInfo: KapHeartSDK.Ota45FileInfo, with progress: KapHeartSDK.KapHeartManager.OTAProgressBlock?, and complete: KapHeartSDK.KapHeartManager.OTACompleteBlock?)
   #endif
   @objc deinit
+}
+public protocol ICommandChannel {
+  typealias Response = (_ isSuccessed: Swift.Bool, _ data: Foundation.Data?) -> Swift.Void
+  typealias ResponseBlock<R> = (_ isSuccessed: Swift.Bool, _ data: R?) -> Swift.Void where R : Swift.Decodable
+  typealias ProgressBlock = (_ total: Swift.Int, _ uploaded: Swift.Int) -> Swift.Void
+  typealias CompleteBlock = (_ error: (any Swift.Error)?) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
+  func sendCommand(cmd: Swift.UInt8, param: Foundation.Data?, response: Self.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func sendCommand(cmd: Swift.UInt8, param: Foundation.Data?, progress: Self.ProgressBlock?, complete: Self.CompleteBlock?, response: Self.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func sendCommandWithJson<P, R>(cmd: Swift.UInt8, param: P?, response: Self.ResponseBlock<R>?) where P : Swift.Encodable, R : Swift.Decodable
+  #endif
 }
 extension KapHeartSDK.MetadataType : Swift.Equatable {}
 extension KapHeartSDK.MetadataType : Swift.Hashable {}
