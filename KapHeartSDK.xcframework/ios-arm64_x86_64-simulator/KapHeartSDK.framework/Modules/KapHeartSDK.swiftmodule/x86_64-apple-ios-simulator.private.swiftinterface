@@ -34,6 +34,14 @@ public struct FileMetadata {
   public var fileSize: Swift.UInt32
   public var timestamp: Swift.UInt32
 }
+public struct FilePackage {
+  public var metadata: KapHeartSDK.FileMetadata {
+    get
+  }
+  public var fileBinary: Foundation.Data {
+    get
+  }
+}
 public struct WifiInfo : Swift.Codable {
   public var ssid: Swift.String
   public var password: Swift.String
@@ -66,7 +74,7 @@ public struct CameraCaptureParams : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol FileReceiver : AnyObject {
-  func didReceivedFile(metadata: KapHeartSDK.FileMetadata, path: Foundation.URL)
+  func didReceivedFile(filePackage: KapHeartSDK.FilePackage)
 }
 public protocol KapHeartManagerDelegate : AnyObject {
   func kapHeartManagerDidStartScan(_ manager: KapHeartSDK.KapHeartManager)

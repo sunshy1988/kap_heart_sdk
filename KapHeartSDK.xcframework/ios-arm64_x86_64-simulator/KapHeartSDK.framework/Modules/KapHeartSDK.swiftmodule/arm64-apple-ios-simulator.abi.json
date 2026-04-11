@@ -761,6 +761,124 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "FilePackage",
+        "printedName": "FilePackage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FileMetadata",
+                "printedName": "KapHeartSDK.FileMetadata",
+                "usr": "s:11KapHeartSDK12FileMetadataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK11FilePackageV8metadataAA0D8MetadataVvp",
+            "mangledName": "$s11KapHeartSDK11FilePackageV8metadataAA0D8MetadataVvp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "FileMetadata",
+                    "printedName": "KapHeartSDK.FileMetadata",
+                    "usr": "s:11KapHeartSDK12FileMetadataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK11FilePackageV8metadataAA0D8MetadataVvg",
+                "mangledName": "$s11KapHeartSDK11FilePackageV8metadataAA0D8MetadataVvg",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fileBinary",
+            "printedName": "fileBinary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK11FilePackageV10fileBinary10Foundation4DataVvp",
+            "mangledName": "$s11KapHeartSDK11FilePackageV10fileBinary10Foundation4DataVvp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK11FilePackageV10fileBinary10Foundation4DataVvg",
+                "mangledName": "$s11KapHeartSDK11FilePackageV10fileBinary10Foundation4DataVvg",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11KapHeartSDK11FilePackageV",
+        "mangledName": "$s11KapHeartSDK11FilePackageV",
+        "moduleName": "KapHeartSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "CoreBluetooth",
         "printedName": "CoreBluetooth",
@@ -1956,7 +2074,7 @@
           {
             "kind": "Function",
             "name": "didReceivedFile",
-            "printedName": "didReceivedFile(metadata:path:)",
+            "printedName": "didReceivedFile(filePackage:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1965,20 +2083,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "FileMetadata",
-                "printedName": "KapHeartSDK.FileMetadata",
-                "usr": "s:11KapHeartSDK12FileMetadataV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
+                "name": "FilePackage",
+                "printedName": "KapHeartSDK.FilePackage",
+                "usr": "s:11KapHeartSDK11FilePackageV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11KapHeartSDK12FileReceiverP011didReceivedD08metadata4pathyAA0D8MetadataV_10Foundation3URLVtF",
-            "mangledName": "$s11KapHeartSDK12FileReceiverP011didReceivedD08metadata4pathyAA0D8MetadataV_10Foundation3URLVtF",
+            "usr": "s:11KapHeartSDK12FileReceiverP011didReceivedD011filePackageyAA0dI0V_tF",
+            "mangledName": "$s11KapHeartSDK12FileReceiverP011didReceivedD011filePackageyAA0dI0V_tF",
             "moduleName": "KapHeartSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : KapHeartSDK.FileReceiver>",
             "sugared_genericSig": "<Self where Self : KapHeartSDK.FileReceiver>",
@@ -4512,21 +4624,21 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1515,
+      "offset": 1506,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1551,
+      "offset": 1542,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1600,
+      "offset": 1591,
       "length": 2,
       "value": "-2"
     },
