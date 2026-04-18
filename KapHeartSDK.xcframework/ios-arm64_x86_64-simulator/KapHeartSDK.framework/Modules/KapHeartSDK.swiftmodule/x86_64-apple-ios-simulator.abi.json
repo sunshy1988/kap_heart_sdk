@@ -1553,6 +1553,80 @@
           },
           {
             "kind": "Var",
+            "name": "kProfile_960_540",
+            "printedName": "kProfile_960_540",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.CameraCaptureProfile.Type) -> KapHeartSDK.CameraCaptureProfile",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureProfile",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile",
+                    "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraCaptureProfile",
+                        "printedName": "KapHeartSDK.CameraCaptureProfile",
+                        "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK20CameraCaptureProfileO01kF8_960_540yA2CmF",
+            "mangledName": "$s11KapHeartSDK20CameraCaptureProfileO01kF8_960_540yA2CmF",
+            "moduleName": "KapHeartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "kProfile_848_480",
+            "printedName": "kProfile_848_480",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.CameraCaptureProfile.Type) -> KapHeartSDK.CameraCaptureProfile",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureProfile",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile",
+                    "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraCaptureProfile",
+                        "printedName": "KapHeartSDK.CameraCaptureProfile",
+                        "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK20CameraCaptureProfileO01kF8_848_480yA2CmF",
+            "mangledName": "$s11KapHeartSDK20CameraCaptureProfileO01kF8_848_480yA2CmF",
+            "moduleName": "KapHeartSDK"
+          },
+          {
+            "kind": "Var",
             "name": "kProfile_640_480",
             "printedName": "kProfile_640_480",
             "children": [
@@ -1586,6 +1660,154 @@
             "declKind": "EnumElement",
             "usr": "s:11KapHeartSDK20CameraCaptureProfileO01kF8_640_480yA2CmF",
             "mangledName": "$s11KapHeartSDK20CameraCaptureProfileO01kF8_640_480yA2CmF",
+            "moduleName": "KapHeartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "kProfile_640_360",
+            "printedName": "kProfile_640_360",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.CameraCaptureProfile.Type) -> KapHeartSDK.CameraCaptureProfile",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureProfile",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile",
+                    "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraCaptureProfile",
+                        "printedName": "KapHeartSDK.CameraCaptureProfile",
+                        "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK20CameraCaptureProfileO01kF8_640_360yA2CmF",
+            "mangledName": "$s11KapHeartSDK20CameraCaptureProfileO01kF8_640_360yA2CmF",
+            "moduleName": "KapHeartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "kProfile_352_288",
+            "printedName": "kProfile_352_288",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.CameraCaptureProfile.Type) -> KapHeartSDK.CameraCaptureProfile",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureProfile",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile",
+                    "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraCaptureProfile",
+                        "printedName": "KapHeartSDK.CameraCaptureProfile",
+                        "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK20CameraCaptureProfileO01kF8_352_288yA2CmF",
+            "mangledName": "$s11KapHeartSDK20CameraCaptureProfileO01kF8_352_288yA2CmF",
+            "moduleName": "KapHeartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "kProfile_320_240",
+            "printedName": "kProfile_320_240",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.CameraCaptureProfile.Type) -> KapHeartSDK.CameraCaptureProfile",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureProfile",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile",
+                    "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraCaptureProfile",
+                        "printedName": "KapHeartSDK.CameraCaptureProfile",
+                        "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK20CameraCaptureProfileO01kF8_320_240yA2CmF",
+            "mangledName": "$s11KapHeartSDK20CameraCaptureProfileO01kF8_320_240yA2CmF",
+            "moduleName": "KapHeartSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "kProfile_320_180",
+            "printedName": "kProfile_320_180",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.CameraCaptureProfile.Type) -> KapHeartSDK.CameraCaptureProfile",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CameraCaptureProfile",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile",
+                    "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.CameraCaptureProfile.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CameraCaptureProfile",
+                        "printedName": "KapHeartSDK.CameraCaptureProfile",
+                        "usr": "s:11KapHeartSDK20CameraCaptureProfileO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK20CameraCaptureProfileO01kF8_320_180yA2CmF",
+            "mangledName": "$s11KapHeartSDK20CameraCaptureProfileO01kF8_320_180yA2CmF",
             "moduleName": "KapHeartSDK"
           },
           {
@@ -4620,6 +4842,48 @@
       "offset": 4883,
       "length": 16,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/Entitys.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4909,
+      "length": 16,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/Entitys.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4935,
+      "length": 16,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/Entitys.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4961,
+      "length": 16,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/Entitys.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4987,
+      "length": 16,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/Entitys.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5013,
+      "length": 16,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/Entitys.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5039,
+      "length": 16,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",

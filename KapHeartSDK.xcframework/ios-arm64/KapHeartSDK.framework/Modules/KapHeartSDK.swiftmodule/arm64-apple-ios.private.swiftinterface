@@ -57,7 +57,13 @@ public struct Ota45FileInfo {
 public enum CameraCaptureProfile : Swift.UInt8, Swift.Codable {
   case kProfile_1920_1080
   case kProfile_1280_720
+  case kProfile_960_540
+  case kProfile_848_480
   case kProfile_640_480
+  case kProfile_640_360
+  case kProfile_352_288
+  case kProfile_320_240
+  case kProfile_320_180
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt8)
   #endif
