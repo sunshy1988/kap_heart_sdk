@@ -2451,7 +2451,7 @@
           {
             "kind": "Function",
             "name": "kapHeartManager",
-            "printedName": "kapHeartManager(_manager:didConnected:)",
+            "printedName": "kapHeartManager(_:didConnected:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2472,8 +2472,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11KapHeartSDK0aB15ManagerDelegateP03kapbD08_manager12didConnectedyAA0abD0C_AA0aB6DeviceCtF",
-            "mangledName": "$s11KapHeartSDK0aB15ManagerDelegateP03kapbD08_manager12didConnectedyAA0abD0C_AA0aB6DeviceCtF",
+            "usr": "s:11KapHeartSDK0aB15ManagerDelegateP03kapbD0_12didConnectedyAA0abD0C_AA0aB6DeviceCtF",
+            "mangledName": "$s11KapHeartSDK0aB15ManagerDelegateP03kapbD0_12didConnectedyAA0abD0C_AA0aB6DeviceCtF",
             "moduleName": "KapHeartSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : KapHeartSDK.KapHeartManagerDelegate>",
             "sugared_genericSig": "<Self where Self : KapHeartSDK.KapHeartManagerDelegate>",
@@ -2487,7 +2487,7 @@
           {
             "kind": "Function",
             "name": "kapHeartManager",
-            "printedName": "kapHeartManager(_manager:didDisconnected:)",
+            "printedName": "kapHeartManager(_:didDisconnected:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2508,8 +2508,44 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11KapHeartSDK0aB15ManagerDelegateP03kapbD08_manager15didDisconnectedyAA0abD0C_AA0aB6DeviceCtF",
-            "mangledName": "$s11KapHeartSDK0aB15ManagerDelegateP03kapbD08_manager15didDisconnectedyAA0abD0C_AA0aB6DeviceCtF",
+            "usr": "s:11KapHeartSDK0aB15ManagerDelegateP03kapbD0_15didDisconnectedyAA0abD0C_AA0aB6DeviceCtF",
+            "mangledName": "$s11KapHeartSDK0aB15ManagerDelegateP03kapbD0_15didDisconnectedyAA0abD0C_AA0aB6DeviceCtF",
+            "moduleName": "KapHeartSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : KapHeartSDK.KapHeartManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : KapHeartSDK.KapHeartManagerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "kapHeartManager",
+            "printedName": "kapHeartManager(_:isReconecting:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KapHeartManager",
+                "printedName": "KapHeartSDK.KapHeartManager",
+                "usr": "s:11KapHeartSDK0aB7ManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KapHeartDevice",
+                "printedName": "KapHeartSDK.KapHeartDevice",
+                "usr": "s:11KapHeartSDK0aB6DeviceC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK0aB15ManagerDelegateP03kapbD0_13isReconectingyAA0abD0C_AA0aB6DeviceCtF",
+            "mangledName": "$s11KapHeartSDK0aB15ManagerDelegateP03kapbD0_13isReconectingyAA0abD0C_AA0aB6DeviceCtF",
             "moduleName": "KapHeartSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : KapHeartSDK.KapHeartManagerDelegate>",
             "sugared_genericSig": "<Self where Self : KapHeartSDK.KapHeartManagerDelegate>",
@@ -2640,6 +2676,47 @@
                 "declKind": "Accessor",
                 "usr": "s:11KapHeartSDK0aB6DeviceC4nameSSSgvg",
                 "mangledName": "$s11KapHeartSDK0aB6DeviceC4nameSSSgvg",
+                "moduleName": "KapHeartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "UUID",
+            "printedName": "UUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK0aB6DeviceC4UUIDSSvp",
+            "mangledName": "$s11KapHeartSDK0aB6DeviceC4UUIDSSvp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB6DeviceC4UUIDSSvg",
+                "mangledName": "$s11KapHeartSDK0aB6DeviceC4UUIDSSvg",
                 "moduleName": "KapHeartSDK",
                 "accessorKind": "get"
               }
@@ -3361,6 +3438,65 @@
           },
           {
             "kind": "Function",
+            "name": "connectDevice",
+            "printedName": "connectDevice(device:autoReconect:complete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KapHeartDevice",
+                "printedName": "KapHeartSDK.KapHeartDevice",
+                "usr": "s:11KapHeartSDK0aB6DeviceC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((KapHeartSDK.KapErrorCode) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KapHeartSDK.KapErrorCode) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapErrorCode",
+                        "printedName": "KapHeartSDK.KapErrorCode",
+                        "usr": "s:11KapHeartSDK0A9ErrorCodeO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK0aB7ManagerC13connectDevice6device12autoReconect8completeyAA0abF0C_SbyAA0A9ErrorCodeOcSgtF",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC13connectDevice6device12autoReconect8completeyAA0abF0C_SbyAA0A9ErrorCodeOcSgtF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "disconnectDevice",
             "printedName": "disconnectDevice(device:)",
             "children": [
@@ -3971,6 +4107,100 @@
             "declKind": "Func",
             "usr": "s:11KapHeartSDK0aB7ManagerC10startOta458fileInfo4with3andyAA0f4FileH0V_ySi_SitcSgyAA0A9ErrorCodeOcSgtF",
             "mangledName": "$s11KapHeartSDK0aB7ManagerC10startOta458fileInfo4with3andyAA0f4FileH0V_ySi_SitcSgyAA0A9ErrorCodeOcSgtF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startUploadStream",
+            "printedName": "startUploadStream(response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((KapHeartSDK.KapErrorCode) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KapHeartSDK.KapErrorCode) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapErrorCode",
+                        "printedName": "KapHeartSDK.KapErrorCode",
+                        "usr": "s:11KapHeartSDK0A9ErrorCodeO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK0aB7ManagerC17startUploadStream8responseyyAA0A9ErrorCodeOcSg_tF",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC17startUploadStream8responseyyAA0A9ErrorCodeOcSg_tF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopUploadStream",
+            "printedName": "stopUploadStream(response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((KapHeartSDK.KapErrorCode) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KapHeartSDK.KapErrorCode) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapErrorCode",
+                        "printedName": "KapHeartSDK.KapErrorCode",
+                        "usr": "s:11KapHeartSDK0A9ErrorCodeO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK0aB7ManagerC16stopUploadStream8responseyyAA0A9ErrorCodeOcSg_tF",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC16stopUploadStream8responseyyAA0A9ErrorCodeOcSg_tF",
             "moduleName": "KapHeartSDK",
             "declAttributes": [
               "AccessControl",
@@ -4594,21 +4824,35 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
       "kind": "StringLiteral",
-      "offset": 633,
+      "offset": 716,
       "length": 7,
       "value": "\"HEART\""
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
       "kind": "StringLiteral",
-      "offset": 676,
+      "offset": 759,
       "length": 11,
       "value": "\"BES NUTTX\""
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
+      "kind": "StringLiteral",
+      "offset": 806,
+      "length": 9,
+      "value": "\"AiGlass\""
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
+      "kind": "StringLiteral",
+      "offset": 851,
+      "length": 7,
+      "value": "\"heart\""
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 767,
+      "offset": 938,
       "length": 5,
       "value": "false"
     },
@@ -4769,35 +5013,49 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandType.swift",
       "kind": "IntegerLiteral",
-      "offset": 827,
+      "offset": 832,
+      "length": 4,
+      "value": "0x1b"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 868,
+      "length": 4,
+      "value": "0x1c"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 898,
       "length": 4,
       "value": "0x0e"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandType.swift",
       "kind": "IntegerLiteral",
-      "offset": 855,
+      "offset": 926,
       "length": 4,
       "value": "0x23"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandType.swift",
       "kind": "IntegerLiteral",
-      "offset": 879,
+      "offset": 950,
       "length": 4,
       "value": "0xFD"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandType.swift",
       "kind": "IntegerLiteral",
-      "offset": 903,
+      "offset": 974,
       "length": 4,
       "value": "0xFE"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandType.swift",
       "kind": "IntegerLiteral",
-      "offset": 930,
+      "offset": 1001,
       "length": 4,
       "value": "0xFF"
     },
@@ -4888,21 +5146,21 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1506,
+      "offset": 1737,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1542,
+      "offset": 1773,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1591,
+      "offset": 1822,
       "length": 2,
       "value": "-2"
     },

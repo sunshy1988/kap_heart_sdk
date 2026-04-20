@@ -86,8 +86,9 @@ public protocol KapHeartManagerDelegate : AnyObject {
   func kapHeartManagerDidStartScan(_ manager: KapHeartSDK.KapHeartManager)
   func kapHeartManagerDidStopScan(_ manager: KapHeartSDK.KapHeartManager)
   func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, discoveryed device: KapHeartSDK.KapHeartDevice)
-  func kapHeartManager(_manager: KapHeartSDK.KapHeartManager, didConnected device: KapHeartSDK.KapHeartDevice)
-  func kapHeartManager(_manager: KapHeartSDK.KapHeartManager, didDisconnected device: KapHeartSDK.KapHeartDevice)
+  func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, didConnected device: KapHeartSDK.KapHeartDevice)
+  func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, didDisconnected device: KapHeartSDK.KapHeartDevice)
+  func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, isReconecting device: KapHeartSDK.KapHeartDevice)
 }
 @_hasMissingDesignatedInitializers public class KapHeartDevice : Swift.Equatable {
   public static func == (lhs: KapHeartSDK.KapHeartDevice, rhs: KapHeartSDK.KapHeartDevice) -> Swift.Bool
@@ -96,6 +97,9 @@ public protocol KapHeartManagerDelegate : AnyObject {
     get
   }
   #endif
+  public var UUID: Swift.String {
+    get
+  }
   @objc deinit
 }
 public enum KapErrorCode : Swift.Int {
@@ -121,6 +125,9 @@ public enum KapErrorCode : Swift.Int {
   public func stopScanDevice() -> KapHeartSDK.KapErrorCode
   #if compiler(>=5.3) && $NonescapableTypes
   public func connectDevice(device: KapHeartSDK.KapHeartDevice, complete: ((_ code: KapHeartSDK.KapErrorCode) -> Swift.Void)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func connectDevice(device: KapHeartSDK.KapHeartDevice, autoReconect: Swift.Bool, complete: ((_ code: KapHeartSDK.KapErrorCode) -> Swift.Void)?)
   #endif
   public func disconnectDevice(device: KapHeartSDK.KapHeartDevice)
   public typealias Response = (_ code: KapHeartSDK.KapErrorCode) -> Swift.Void
@@ -156,6 +163,12 @@ public enum KapErrorCode : Swift.Int {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func startOta45(fileInfo: KapHeartSDK.Ota45FileInfo, with progress: KapHeartSDK.KapHeartManager.OTAProgressBlock?, and complete: KapHeartSDK.KapHeartManager.OTACompleteBlock?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func startUploadStream(response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stopUploadStream(response: KapHeartSDK.KapHeartManager.Response?)
   #endif
   @objc deinit
 }
