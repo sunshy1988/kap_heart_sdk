@@ -4719,7 +4719,7 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/DataChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 959,
+      "offset": 1066,
       "length": 1,
       "value": "0"
     },
@@ -5538,21 +5538,21 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1106,
+      "offset": 1130,
       "length": 4,
       "value": "0x10"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1139,
+      "offset": 1163,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1172,
+      "offset": 1196,
       "length": 4,
       "value": "0x03"
     }
