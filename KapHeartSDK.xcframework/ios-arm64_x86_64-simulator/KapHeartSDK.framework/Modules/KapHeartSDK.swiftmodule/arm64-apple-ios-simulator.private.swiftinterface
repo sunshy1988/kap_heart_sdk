@@ -186,6 +186,12 @@ public protocol ICommandChannel {
   #if compiler(>=5.3) && $NonescapableTypes
   func sendCommandWithJson<P, R>(cmd: Swift.UInt8, param: P?, response: Self.ResponseBlock<R>?) where P : Swift.Encodable, R : Swift.Decodable
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func sendResponse(seqNum: Swift.UInt16, isAck: Swift.Bool, param: Foundation.Data?) -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func sendResponseWithJson<P>(seqNum: Swift.UInt16, isAck: Swift.Bool, param: P?) -> Swift.Bool where P : Swift.Encodable
+  #endif
 }
 extension KapHeartSDK.MetadataType : Swift.Equatable {}
 extension KapHeartSDK.MetadataType : Swift.Hashable {}

@@ -4679,6 +4679,101 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendResponse",
+            "printedName": "sendResponse(seqNum:isAck:param:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK15ICommandChannelP12sendResponse6seqNum5isAck5paramSbs6UInt16V_Sb10Foundation4DataVSgtF",
+            "mangledName": "$s11KapHeartSDK15ICommandChannelP12sendResponse6seqNum5isAck5paramSbs6UInt16V_Sb10Foundation4DataVSgtF",
+            "moduleName": "KapHeartSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : KapHeartSDK.ICommandChannel>",
+            "sugared_genericSig": "<Self where Self : KapHeartSDK.ICommandChannel>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendResponseWithJson",
+            "printedName": "sendResponseWithJson(seqNum:isAck:param:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt16",
+                "printedName": "Swift.UInt16",
+                "usr": "s:s6UInt16V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_1_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK15ICommandChannelP20sendResponseWithJson6seqNum5isAck5paramSbs6UInt16V_Sbqd__SgtSERd__lF",
+            "mangledName": "$s11KapHeartSDK15ICommandChannelP20sendResponseWithJson6seqNum5isAck5paramSbs6UInt16V_Sbqd__SgtSERd__lF",
+            "moduleName": "KapHeartSDK",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : KapHeartSDK.ICommandChannel, τ_1_0 : Swift.Encodable>",
+            "sugared_genericSig": "<Self, P where Self : KapHeartSDK.ICommandChannel, P : Swift.Encodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -5538,21 +5633,21 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1130,
+      "offset": 1299,
       "length": 4,
       "value": "0x10"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1163,
+      "offset": 1332,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1196,
+      "offset": 1365,
       "length": 4,
       "value": "0x03"
     }
