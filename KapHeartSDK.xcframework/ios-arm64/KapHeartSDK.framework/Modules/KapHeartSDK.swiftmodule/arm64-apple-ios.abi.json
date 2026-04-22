@@ -4918,36 +4918,8 @@
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
-      "kind": "StringLiteral",
-      "offset": 716,
-      "length": 7,
-      "value": "\"HEART\""
-    },
-    {
-      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
-      "kind": "StringLiteral",
-      "offset": 759,
-      "length": 11,
-      "value": "\"BES NUTTX\""
-    },
-    {
-      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
-      "kind": "StringLiteral",
-      "offset": 806,
-      "length": 9,
-      "value": "\"AiGlass\""
-    },
-    {
-      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
-      "kind": "StringLiteral",
-      "offset": 851,
-      "length": 7,
-      "value": "\"heart\""
-    },
-    {
-      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Core\/GlassManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 938,
+      "offset": 816,
       "length": 5,
       "value": "false"
     },
@@ -5241,21 +5213,21 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1737,
+      "offset": 1881,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1773,
+      "offset": 1917,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1822,
+      "offset": 1966,
       "length": 2,
       "value": "-2"
     },
