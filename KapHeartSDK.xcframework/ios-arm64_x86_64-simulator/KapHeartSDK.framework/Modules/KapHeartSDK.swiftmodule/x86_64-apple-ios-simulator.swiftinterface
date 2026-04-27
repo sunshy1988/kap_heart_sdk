@@ -7,13 +7,10 @@ import CoreBluetooth
 import CryptoKit
 import Foundation
 import Network
-import NetworkExtension
 import Swift
-import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import os
 public enum MetadataType : Swift.UInt8 {
   case unknown
   case txt
@@ -79,6 +76,47 @@ public struct CameraCaptureParams : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct LedColor : Swift.Codable {
+  public init(r: Swift.UInt16, g: Swift.UInt16, b: Swift.UInt16)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum SensorOdr : Swift.UInt8, Swift.Codable {
+  case hz1
+  case hz12_5
+  case hz25
+  case hz50
+  case hz31_25
+  case hz62_5
+  case hz100
+  case hz125
+  case hz200
+  case hz250
+  case hz500
+  case hz1000
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.UInt8)
+  #endif
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public struct SensorStartParam : Swift.Codable {
+  public init(odr: KapHeartSDK.SensorOdr)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SensorData : Swift.Codable {
+  public var x: Swift.UInt16
+  public var y: Swift.UInt16
+  public var z: Swift.UInt16
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol SensorDataReceiver : AnyObject {
+  func didReceivedSensorData(_ data: KapHeartSDK.SensorData)
+}
 public protocol FileReceiver : AnyObject {
   func didReceivedFile(filePackage: KapHeartSDK.FilePackage)
 }
@@ -121,6 +159,7 @@ public enum KapErrorCode : Swift.Int {
   public static let shareInstance: KapHeartSDK.KapHeartManager
   weak public var delegate: (any KapHeartSDK.KapHeartManagerDelegate)?
   weak public var fileReceiver: (any KapHeartSDK.FileReceiver)?
+  weak public var sensorReceiver: (any KapHeartSDK.SensorDataReceiver)?
   public func startScanDevice() -> KapHeartSDK.KapErrorCode
   public func stopScanDevice() -> KapHeartSDK.KapErrorCode
   #if compiler(>=5.3) && $NonescapableTypes
@@ -162,13 +201,19 @@ public enum KapErrorCode : Swift.Int {
   public func startOta2800(filePath: Foundation.URL, with progress: KapHeartSDK.KapHeartManager.OTAProgressBlock?, and complete: KapHeartSDK.KapHeartManager.OTACompleteBlock?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func startOta45(fileInfo: KapHeartSDK.Ota45FileInfo, with progress: KapHeartSDK.KapHeartManager.OTAProgressBlock?, and complete: KapHeartSDK.KapHeartManager.OTACompleteBlock?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startUploadStream(response: KapHeartSDK.KapHeartManager.Response?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func stopUploadStream(response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func ledControl(color: KapHeartSDK.LedColor, response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func startSensor(param: KapHeartSDK.SensorStartParam, response: KapHeartSDK.KapHeartManager.Response?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func stopSensor(response: KapHeartSDK.KapHeartManager.Response?)
   #endif
   @objc deinit
 }
@@ -199,6 +244,9 @@ extension KapHeartSDK.MetadataType : Swift.RawRepresentable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.Equatable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.Hashable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.RawRepresentable {}
+extension KapHeartSDK.SensorOdr : Swift.Equatable {}
+extension KapHeartSDK.SensorOdr : Swift.Hashable {}
+extension KapHeartSDK.SensorOdr : Swift.RawRepresentable {}
 extension KapHeartSDK.KapErrorCode : Swift.Equatable {}
 extension KapHeartSDK.KapErrorCode : Swift.Hashable {}
 extension KapHeartSDK.KapErrorCode : Swift.RawRepresentable {}
