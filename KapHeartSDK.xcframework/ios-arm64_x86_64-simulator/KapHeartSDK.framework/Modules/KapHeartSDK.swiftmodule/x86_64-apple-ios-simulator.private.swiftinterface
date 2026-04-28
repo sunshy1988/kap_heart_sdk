@@ -102,7 +102,7 @@ public enum SensorOdr : Swift.UInt8, Swift.Codable {
     get
   }
 }
-public struct SensorStartParam : Swift.Codable {
+public struct SensorParam : Swift.Codable {
   public init(odr: KapHeartSDK.SensorOdr)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -111,6 +111,21 @@ public struct SensorData : Swift.Codable {
   public var x: Swift.UInt16
   public var y: Swift.UInt16
   public var z: Swift.UInt16
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AudioFormat : Swift.Int, Swift.Codable {
+  case pcm
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct AudioParam : Swift.Codable {
+  public init(format: KapHeartSDK.AudioFormat, sample_rate: Swift.Int, duration: Swift.Int, mic_gain: Swift.Int)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -184,7 +199,7 @@ public enum KapErrorCode : Swift.Int {
   public func stopCameraCaputre(response: KapHeartSDK.KapHeartManager.Response?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func startAudioCapture(response: KapHeartSDK.KapHeartManager.Response?)
+  public func startAudioCapture(param: KapHeartSDK.AudioParam, response: KapHeartSDK.KapHeartManager.Response?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func stopAudioCaputre(response: KapHeartSDK.KapHeartManager.Response?)
@@ -210,7 +225,7 @@ public enum KapErrorCode : Swift.Int {
   public func ledControl(color: KapHeartSDK.LedColor, response: KapHeartSDK.KapHeartManager.Response?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func startSensor(param: KapHeartSDK.SensorStartParam, response: KapHeartSDK.KapHeartManager.Response?)
+  public func startSensor(param: KapHeartSDK.SensorParam, response: KapHeartSDK.KapHeartManager.Response?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func stopSensor(response: KapHeartSDK.KapHeartManager.Response?)
@@ -247,6 +262,9 @@ extension KapHeartSDK.CameraCaptureProfile : Swift.RawRepresentable {}
 extension KapHeartSDK.SensorOdr : Swift.Equatable {}
 extension KapHeartSDK.SensorOdr : Swift.Hashable {}
 extension KapHeartSDK.SensorOdr : Swift.RawRepresentable {}
+extension KapHeartSDK.AudioFormat : Swift.Equatable {}
+extension KapHeartSDK.AudioFormat : Swift.Hashable {}
+extension KapHeartSDK.AudioFormat : Swift.RawRepresentable {}
 extension KapHeartSDK.KapErrorCode : Swift.Equatable {}
 extension KapHeartSDK.KapErrorCode : Swift.Hashable {}
 extension KapHeartSDK.KapErrorCode : Swift.RawRepresentable {}

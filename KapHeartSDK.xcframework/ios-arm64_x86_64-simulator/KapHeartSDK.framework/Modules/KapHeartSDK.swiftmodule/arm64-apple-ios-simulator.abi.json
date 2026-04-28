@@ -2963,8 +2963,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "SensorStartParam",
-        "printedName": "SensorStartParam",
+        "name": "SensorParam",
+        "printedName": "SensorParam",
         "children": [
           {
             "kind": "Constructor",
@@ -2973,9 +2973,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SensorStartParam",
-                "printedName": "KapHeartSDK.SensorStartParam",
-                "usr": "s:11KapHeartSDK16SensorStartParamV"
+                "name": "SensorParam",
+                "printedName": "KapHeartSDK.SensorParam",
+                "usr": "s:11KapHeartSDK11SensorParamV"
               },
               {
                 "kind": "TypeNominal",
@@ -2985,8 +2985,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11KapHeartSDK16SensorStartParamV3odrAcA0D3OdrO_tcfc",
-            "mangledName": "$s11KapHeartSDK16SensorStartParamV3odrAcA0D3OdrO_tcfc",
+            "usr": "s:11KapHeartSDK11SensorParamV3odrAcA0D3OdrO_tcfc",
+            "mangledName": "$s11KapHeartSDK11SensorParamV3odrAcA0D3OdrO_tcfc",
             "moduleName": "KapHeartSDK",
             "declAttributes": [
               "AccessControl"
@@ -3000,9 +3000,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "SensorStartParam",
-                "printedName": "KapHeartSDK.SensorStartParam",
-                "usr": "s:11KapHeartSDK16SensorStartParamV"
+                "name": "SensorParam",
+                "printedName": "KapHeartSDK.SensorParam",
+                "usr": "s:11KapHeartSDK11SensorParamV"
               },
               {
                 "kind": "TypeNominal",
@@ -3012,8 +3012,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11KapHeartSDK16SensorStartParamV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s11KapHeartSDK16SensorStartParamV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:11KapHeartSDK11SensorParamV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11KapHeartSDK11SensorParamV4fromACs7Decoder_p_tKcfc",
             "moduleName": "KapHeartSDK",
             "implicit": true,
             "throwing": true,
@@ -3037,8 +3037,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11KapHeartSDK16SensorStartParamV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s11KapHeartSDK16SensorStartParamV6encode2toys7Encoder_p_tKF",
+            "usr": "s:11KapHeartSDK11SensorParamV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11KapHeartSDK11SensorParamV6encode2toys7Encoder_p_tKF",
             "moduleName": "KapHeartSDK",
             "implicit": true,
             "throwing": true,
@@ -3046,8 +3046,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:11KapHeartSDK16SensorStartParamV",
-        "mangledName": "$s11KapHeartSDK16SensorStartParamV",
+        "usr": "s:11KapHeartSDK11SensorParamV",
+        "mangledName": "$s11KapHeartSDK11SensorParamV",
         "moduleName": "KapHeartSDK",
         "declAttributes": [
           "AccessControl"
@@ -3398,6 +3398,336 @@
         "declKind": "Struct",
         "usr": "s:11KapHeartSDK10SensorDataV",
         "mangledName": "$s11KapHeartSDK10SensorDataV",
+        "moduleName": "KapHeartSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioFormat",
+        "printedName": "AudioFormat",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "pcm",
+            "printedName": "pcm",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.AudioFormat.Type) -> KapHeartSDK.AudioFormat",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioFormat",
+                    "printedName": "KapHeartSDK.AudioFormat",
+                    "usr": "s:11KapHeartSDK11AudioFormatO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.AudioFormat.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AudioFormat",
+                        "printedName": "KapHeartSDK.AudioFormat",
+                        "usr": "s:11KapHeartSDK11AudioFormatO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK11AudioFormatO3pcmyA2CmF",
+            "mangledName": "$s11KapHeartSDK11AudioFormatO3pcmyA2CmF",
+            "moduleName": "KapHeartSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KapHeartSDK.AudioFormat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AudioFormat",
+                    "printedName": "KapHeartSDK.AudioFormat",
+                    "usr": "s:11KapHeartSDK11AudioFormatO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11KapHeartSDK11AudioFormatO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11KapHeartSDK11AudioFormatO8rawValueACSgSi_tcfc",
+            "moduleName": "KapHeartSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK11AudioFormatO8rawValueSivp",
+            "mangledName": "$s11KapHeartSDK11AudioFormatO8rawValueSivp",
+            "moduleName": "KapHeartSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK11AudioFormatO8rawValueSivg",
+                "mangledName": "$s11KapHeartSDK11AudioFormatO8rawValueSivg",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11KapHeartSDK11AudioFormatO",
+        "mangledName": "$s11KapHeartSDK11AudioFormatO",
+        "moduleName": "KapHeartSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AudioParam",
+        "printedName": "AudioParam",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(format:sample_rate:duration:mic_gain:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioParam",
+                "printedName": "KapHeartSDK.AudioParam",
+                "usr": "s:11KapHeartSDK10AudioParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AudioFormat",
+                "printedName": "KapHeartSDK.AudioFormat",
+                "usr": "s:11KapHeartSDK11AudioFormatO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11KapHeartSDK10AudioParamV6format11sample_rate8duration8mic_gainAcA0D6FormatO_S3itcfc",
+            "mangledName": "$s11KapHeartSDK10AudioParamV6format11sample_rate8duration8mic_gainAcA0D6FormatO_S3itcfc",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AudioParam",
+                "printedName": "KapHeartSDK.AudioParam",
+                "usr": "s:11KapHeartSDK10AudioParamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11KapHeartSDK10AudioParamV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11KapHeartSDK10AudioParamV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KapHeartSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK10AudioParamV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11KapHeartSDK10AudioParamV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KapHeartSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11KapHeartSDK10AudioParamV",
+        "mangledName": "$s11KapHeartSDK10AudioParamV",
         "moduleName": "KapHeartSDK",
         "declAttributes": [
           "AccessControl"
@@ -5078,12 +5408,18 @@
           {
             "kind": "Function",
             "name": "startAudioCapture",
-            "printedName": "startAudioCapture(response:)",
+            "printedName": "startAudioCapture(param:response:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AudioParam",
+                "printedName": "KapHeartSDK.AudioParam",
+                "usr": "s:11KapHeartSDK10AudioParamV"
               },
               {
                 "kind": "TypeNominal",
@@ -5113,8 +5449,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11KapHeartSDK0aB7ManagerC17startAudioCapture8responseyyAA0A9ErrorCodeOcSg_tF",
-            "mangledName": "$s11KapHeartSDK0aB7ManagerC17startAudioCapture8responseyyAA0A9ErrorCodeOcSg_tF",
+            "usr": "s:11KapHeartSDK0aB7ManagerC17startAudioCapture5param8responseyAA0F5ParamV_yAA0A9ErrorCodeOcSgtF",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC17startAudioCapture5param8responseyAA0F5ParamV_yAA0A9ErrorCodeOcSgtF",
             "moduleName": "KapHeartSDK",
             "declAttributes": [
               "AccessControl",
@@ -5520,9 +5856,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "SensorStartParam",
-                "printedName": "KapHeartSDK.SensorStartParam",
-                "usr": "s:11KapHeartSDK16SensorStartParamV"
+                "name": "SensorParam",
+                "printedName": "KapHeartSDK.SensorParam",
+                "usr": "s:11KapHeartSDK11SensorParamV"
               },
               {
                 "kind": "TypeNominal",
@@ -5552,8 +5888,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11KapHeartSDK0aB7ManagerC11startSensor5param8responseyAA0F10StartParamV_yAA0A9ErrorCodeOcSgtF",
-            "mangledName": "$s11KapHeartSDK0aB7ManagerC11startSensor5param8responseyAA0F10StartParamV_yAA0A9ErrorCodeOcSgtF",
+            "usr": "s:11KapHeartSDK0aB7ManagerC11startSensor5param8responseyAA0F5ParamV_yAA0A9ErrorCodeOcSgtF",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC11startSensor5param8responseyAA0F5ParamV_yAA0A9ErrorCodeOcSgtF",
             "moduleName": "KapHeartSDK",
             "declAttributes": [
               "AccessControl",
@@ -6451,170 +6787,177 @@
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 1669,
+      "offset": 1709,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 1706,
+      "offset": 1746,
       "length": 4,
       "value": "0x80"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 1743,
+      "offset": 1783,
       "length": 4,
       "value": "0x40"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4845,
+      "offset": 4885,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4856,
+      "offset": 4896,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4883,
+      "offset": 4923,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4909,
+      "offset": 4949,
       "length": 16,
       "value": "3"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4935,
+      "offset": 4975,
       "length": 16,
       "value": "4"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4961,
+      "offset": 5001,
       "length": 16,
       "value": "5"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4987,
+      "offset": 5027,
       "length": 16,
       "value": "6"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5013,
+      "offset": 5053,
       "length": 16,
       "value": "7"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5039,
+      "offset": 5079,
       "length": 16,
       "value": "8"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5613,
+      "offset": 5653,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5639,
+      "offset": 5679,
       "length": 4,
       "value": "0x01"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5665,
+      "offset": 5705,
       "length": 4,
       "value": "0x02"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5691,
+      "offset": 5731,
       "length": 4,
       "value": "0x04"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5717,
+      "offset": 5757,
       "length": 4,
       "value": "0x05"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5743,
+      "offset": 5783,
       "length": 4,
       "value": "0x06"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5769,
+      "offset": 5809,
       "length": 4,
       "value": "0x07"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5795,
+      "offset": 5835,
       "length": 4,
       "value": "0x08"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5821,
+      "offset": 5861,
       "length": 4,
       "value": "0x09"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5847,
+      "offset": 5887,
       "length": 4,
       "value": "0x0A"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5873,
+      "offset": 5913,
       "length": 4,
       "value": "0x0B"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5899,
+      "offset": 5939,
       "length": 4,
       "value": "0x0C"
+    },
+    {
+      "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6247,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/admin\/code\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
