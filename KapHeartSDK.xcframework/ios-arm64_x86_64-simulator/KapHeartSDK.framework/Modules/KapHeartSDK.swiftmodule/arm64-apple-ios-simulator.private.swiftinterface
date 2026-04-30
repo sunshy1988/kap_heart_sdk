@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KapHeartSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KapHeartSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import AVFAudio
 import CoreBluetooth
 import CryptoKit
@@ -17,9 +17,7 @@ public enum MetadataType : Swift.UInt8 {
   case image
   case audio
   case binay
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt8)
-  #endif
   public typealias RawValue = Swift.UInt8
   public var rawValue: Swift.UInt8 {
     get
@@ -61,9 +59,7 @@ public enum CameraCaptureProfile : Swift.UInt8, Swift.Codable {
   case kProfile_352_288
   case kProfile_320_240
   case kProfile_320_180
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.UInt8)
-  #endif
   public typealias RawValue = Swift.UInt8
   public var rawValue: Swift.UInt8 {
     get
@@ -81,59 +77,33 @@ public struct LedColor : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum SensorOdr : Swift.UInt8, Swift.Codable {
-  case hz1
-  case hz12_5
-  case hz25
-  case hz50
-  case hz31_25
-  case hz62_5
-  case hz100
-  case hz125
-  case hz200
-  case hz250
-  case hz500
-  case hz1000
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.UInt8)
-  #endif
-  public typealias RawValue = Swift.UInt8
-  public var rawValue: Swift.UInt8 {
-    get
-  }
-}
-public struct SensorParam : Swift.Codable {
-  public init(odr: KapHeartSDK.SensorOdr)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct SensorData : Swift.Codable {
-  public var x: Swift.UInt16
-  public var y: Swift.UInt16
-  public var z: Swift.UInt16
+  public var x: Swift.Int16
+  public var y: Swift.Int16
+  public var z: Swift.Int16
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum AudioFormat : Swift.Int, Swift.Codable {
-  case pcm
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public struct AudioParam : Swift.Codable {
-  public init(format: KapHeartSDK.AudioFormat, sample_rate: Swift.Int, duration: Swift.Int, mic_gain: Swift.Int)
+public struct AudioStartParam : Swift.Codable {
+  public var format: Swift.Int
+  public var sample_rate: Swift.Int
+  public var duration: Swift.Int
+  public var mic_gain: Swift.Int
+  public init(format: Swift.Int = 0, sample_rate: Swift.Int = 16000, duration: Swift.Int = 8, mic_gain: Swift.Int = 12)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public protocol SensorDataReceiver : AnyObject {
-  func didReceivedSensorData(_ data: KapHeartSDK.SensorData)
+public struct GsensorStartParam : Swift.Codable {
+  public var odr: Swift.Int
+  public init(odr: Swift.Int = 0x05)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public protocol FileReceiver : AnyObject {
   func didReceivedFile(filePackage: KapHeartSDK.FilePackage)
+}
+public protocol GsensorDataReceiver : AnyObject {
+  func didReceivedGsensorData(data: KapHeartSDK.SensorData)
 }
 public protocol KapHeartManagerDelegate : AnyObject {
   func kapHeartManagerDidStartScan(_ manager: KapHeartSDK.KapHeartManager)
@@ -145,11 +115,9 @@ public protocol KapHeartManagerDelegate : AnyObject {
 }
 @_hasMissingDesignatedInitializers public class KapHeartDevice : Swift.Equatable {
   public static func == (lhs: KapHeartSDK.KapHeartDevice, rhs: KapHeartSDK.KapHeartDevice) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public var name: Swift.String? {
     get
   }
-  #endif
   public var UUID: Swift.String {
     get
   }
@@ -159,9 +127,7 @@ public enum KapErrorCode : Swift.Int {
   case kSuccessed
   case kUnknowError
   case kDeivceNotConnect
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -174,62 +140,31 @@ public enum KapErrorCode : Swift.Int {
   public static let shareInstance: KapHeartSDK.KapHeartManager
   weak public var delegate: (any KapHeartSDK.KapHeartManagerDelegate)?
   weak public var fileReceiver: (any KapHeartSDK.FileReceiver)?
-  weak public var sensorReceiver: (any KapHeartSDK.SensorDataReceiver)?
+  weak public var gsensorDataReceiver: (any KapHeartSDK.GsensorDataReceiver)?
   public func startScanDevice() -> KapHeartSDK.KapErrorCode
   public func stopScanDevice() -> KapHeartSDK.KapErrorCode
-  #if compiler(>=5.3) && $NonescapableTypes
   public func connectDevice(device: KapHeartSDK.KapHeartDevice, complete: ((_ code: KapHeartSDK.KapErrorCode) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func connectDevice(device: KapHeartSDK.KapHeartDevice, autoReconect: Swift.Bool, complete: ((_ code: KapHeartSDK.KapErrorCode) -> Swift.Void)?)
-  #endif
   public func disconnectDevice(device: KapHeartSDK.KapHeartDevice)
   public typealias Response = (_ code: KapHeartSDK.KapErrorCode) -> Swift.Void
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setCameraCaptureParam(_ param: KapHeartSDK.CameraCaptureParams, response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
   public typealias CameraCaptureParamResponse = (_ code: KapHeartSDK.KapErrorCode, _ param: KapHeartSDK.CameraCaptureParams?) -> Swift.Void
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getCameraCaptureParam(response: KapHeartSDK.KapHeartManager.CameraCaptureParamResponse?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startCameraCapture(response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func stopCameraCaputre(response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func startAudioCapture(param: KapHeartSDK.AudioParam, response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  public func startAudioCapture(response: KapHeartSDK.KapHeartManager.Response?)
+  public func startAudioCapture(param: KapHeartSDK.AudioStartParam?, response: KapHeartSDK.KapHeartManager.Response?)
   public func stopAudioCaputre(response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func connectWifi(wifi: KapHeartSDK.WifiInfo, response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func disConnectWifi(response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
   public typealias OTAProgressBlock = (_ total: Swift.Int, _ uploaded: Swift.Int) -> Swift.Void
   public typealias OTACompleteBlock = (_ code: KapHeartSDK.KapErrorCode) -> Swift.Void
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startOta2800(filePath: Foundation.URL, with progress: KapHeartSDK.KapHeartManager.OTAProgressBlock?, and complete: KapHeartSDK.KapHeartManager.OTACompleteBlock?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startUploadStream(response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func stopUploadStream(response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func ledControl(color: KapHeartSDK.LedColor, response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func startSensor(param: KapHeartSDK.SensorParam, response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func stopSensor(response: KapHeartSDK.KapHeartManager.Response?)
-  #endif
+  public func startGsensor(param: KapHeartSDK.GsensorStartParam, response: KapHeartSDK.KapHeartManager.Response?)
+  public func stopGsensor(response: KapHeartSDK.KapHeartManager.Response?)
   @objc deinit
 }
 public protocol ICommandChannel {
@@ -237,21 +172,11 @@ public protocol ICommandChannel {
   typealias ResponseBlock<R> = (_ isSuccessed: Swift.Bool, _ data: R?) -> Swift.Void where R : Swift.Decodable
   typealias ProgressBlock = (_ total: Swift.Int, _ uploaded: Swift.Int) -> Swift.Void
   typealias CompleteBlock = (_ error: (any Swift.Error)?) -> Swift.Void
-  #if compiler(>=5.3) && $NonescapableTypes
   func sendCommand(cmd: Swift.UInt8, param: Foundation.Data?, response: Self.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func sendCommand(cmd: Swift.UInt8, param: Foundation.Data?, progress: Self.ProgressBlock?, complete: Self.CompleteBlock?, response: Self.Response?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func sendCommandWithJson<P, R>(cmd: Swift.UInt8, param: P?, response: Self.ResponseBlock<R>?) where P : Swift.Encodable, R : Swift.Decodable
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func sendResponse(seqNum: Swift.UInt16, isAck: Swift.Bool, param: Foundation.Data?) -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func sendResponseWithJson<P>(seqNum: Swift.UInt16, isAck: Swift.Bool, param: P?) -> Swift.Bool where P : Swift.Encodable
-  #endif
 }
 extension KapHeartSDK.MetadataType : Swift.Equatable {}
 extension KapHeartSDK.MetadataType : Swift.Hashable {}
@@ -259,12 +184,6 @@ extension KapHeartSDK.MetadataType : Swift.RawRepresentable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.Equatable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.Hashable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.RawRepresentable {}
-extension KapHeartSDK.SensorOdr : Swift.Equatable {}
-extension KapHeartSDK.SensorOdr : Swift.Hashable {}
-extension KapHeartSDK.SensorOdr : Swift.RawRepresentable {}
-extension KapHeartSDK.AudioFormat : Swift.Equatable {}
-extension KapHeartSDK.AudioFormat : Swift.Hashable {}
-extension KapHeartSDK.AudioFormat : Swift.RawRepresentable {}
 extension KapHeartSDK.KapErrorCode : Swift.Equatable {}
 extension KapHeartSDK.KapErrorCode : Swift.Hashable {}
 extension KapHeartSDK.KapErrorCode : Swift.RawRepresentable {}
