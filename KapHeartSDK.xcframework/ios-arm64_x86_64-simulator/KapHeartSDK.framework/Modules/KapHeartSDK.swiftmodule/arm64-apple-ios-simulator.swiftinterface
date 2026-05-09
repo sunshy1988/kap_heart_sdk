@@ -11,32 +11,6 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum MetadataType : Swift.UInt8 {
-  case unknown
-  case txt
-  case image
-  case audio
-  case binay
-  public init?(rawValue: Swift.UInt8)
-  public typealias RawValue = Swift.UInt8
-  public var rawValue: Swift.UInt8 {
-    get
-  }
-}
-public struct FileMetadata {
-  public var type: KapHeartSDK.MetadataType
-  public var filename: Swift.String?
-  public var fileSize: Swift.UInt32
-  public var timestamp: Swift.UInt32
-}
-public struct FilePackage {
-  public var metadata: KapHeartSDK.FileMetadata {
-    get
-  }
-  public var fileBinary: Foundation.Data {
-    get
-  }
-}
 public struct WifiInfo : Swift.Codable {
   public var ssid: Swift.String
   public var password: Swift.String
@@ -67,8 +41,8 @@ public enum CameraCaptureProfile : Swift.UInt8, Swift.Codable {
 }
 public struct CameraCaptureParams : Swift.Codable {
   public var profile: KapHeartSDK.CameraCaptureProfile
-  public var freq: Swift.Float16
-  public init(profile: KapHeartSDK.CameraCaptureProfile, freq: Swift.Float16)
+  public var freq: Swift.Float
+  public init(profile: KapHeartSDK.CameraCaptureProfile, freq: Swift.Float)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -99,11 +73,106 @@ public struct GsensorStartParam : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct BindUuidParam : Swift.Codable {
+  public var uuid: Swift.String
+  public init(uuid: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PowerModeParam : Swift.Codable {
+  public var mode: Swift.Int
+  public init(mode: Swift.Int)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PowerCameraParam : Swift.Codable {
+  public var mode: Swift.Int
+  public var sensor: Swift.Int
+  public var profile: Swift.Int
+  public var freq: Swift.Float
+  public init(mode: Swift.Int, sensor: Swift.Int, profile: Swift.Int, freq: Swift.Float)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum GC2607Profile : Swift.Int {
+  case p1920x1080
+  case p1280x720
+  case p960x540
+  case p848x480
+  case p640x480
+  case p640x360
+  case p352x288
+  case p320x240
+  case p320x180
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum OV02B10Profile : Swift.Int {
+  case p1600x1200
+  case p1280x720
+  case p800x600
+  case p400x300
+  case p240x180
+  case p240x136
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum MetadataType : Swift.UInt8 {
+  case unknown
+  case txt
+  case image
+  case audio
+  case binay
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public struct FileMetadata {
+  public var type: KapHeartSDK.MetadataType
+  public var filename: Swift.String?
+  public var fileSize: Swift.UInt32
+  public var timestamp: Swift.UInt32
+}
+public struct FilePackage {
+  public var metadata: KapHeartSDK.FileMetadata {
+    get
+  }
+  public var fileBinary: Foundation.Data {
+    get
+  }
+}
+public protocol ICommandChannel {
+  typealias Response = (_ isSuccessed: Swift.Bool, _ data: Foundation.Data?) -> Swift.Void
+  typealias ResponseBlock<R> = (_ isSuccessed: Swift.Bool, _ data: R?) -> Swift.Void where R : Swift.Decodable
+  typealias ProgressBlock = (_ total: Swift.Int, _ uploaded: Swift.Int) -> Swift.Void
+  typealias CompleteBlock = (_ error: (any Swift.Error)?) -> Swift.Void
+  func sendCommand(cmd: Swift.UInt8, param: Foundation.Data?, response: Self.Response?)
+  func sendCommand(cmd: Swift.UInt8, param: Foundation.Data?, progress: Self.ProgressBlock?, complete: Self.CompleteBlock?, response: Self.Response?)
+  func sendCommandWithJson<P, R>(cmd: Swift.UInt8, param: P?, response: Self.ResponseBlock<R>?) where P : Swift.Encodable, R : Swift.Decodable
+  func sendResponse(seqNum: Swift.UInt16, isAck: Swift.Bool, param: Foundation.Data?) -> Swift.Bool
+  func sendResponseWithJson<P>(seqNum: Swift.UInt16, isAck: Swift.Bool, param: P?) -> Swift.Bool where P : Swift.Encodable
+  func failAllPending()
+}
 public protocol FileReceiver : AnyObject {
   func didReceivedFile(filePackage: KapHeartSDK.FilePackage)
 }
 public protocol GsensorDataReceiver : AnyObject {
   func didReceivedGsensorData(data: KapHeartSDK.SensorData)
+}
+public enum KapReconnectState : Swift.Equatable {
+  case idle
+  case waitingBluetooth
+  case reconnecting(attempt: Swift.Int)
+  case givenUp
+  public static func == (a: KapHeartSDK.KapReconnectState, b: KapHeartSDK.KapReconnectState) -> Swift.Bool
 }
 public protocol KapHeartManagerDelegate : AnyObject {
   func kapHeartManagerDidStartScan(_ manager: KapHeartSDK.KapHeartManager)
@@ -112,6 +181,12 @@ public protocol KapHeartManagerDelegate : AnyObject {
   func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, didConnected device: KapHeartSDK.KapHeartDevice)
   func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, didDisconnected device: KapHeartSDK.KapHeartDevice)
   func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, isReconecting device: KapHeartSDK.KapHeartDevice)
+  func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, reconnectStateChanged state: KapHeartSDK.KapReconnectState)
+  func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, bluetoothPowerStateChanged on: Swift.Bool)
+}
+extension KapHeartSDK.KapHeartManagerDelegate {
+  public func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, reconnectStateChanged state: KapHeartSDK.KapReconnectState)
+  public func kapHeartManager(_ manager: KapHeartSDK.KapHeartManager, bluetoothPowerStateChanged on: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers public class KapHeartDevice : Swift.Equatable {
   public static func == (lhs: KapHeartSDK.KapHeartDevice, rhs: KapHeartSDK.KapHeartDevice) -> Swift.Bool
@@ -165,25 +240,25 @@ public enum KapErrorCode : Swift.Int {
   public func ledControl(color: KapHeartSDK.LedColor, response: KapHeartSDK.KapHeartManager.Response?)
   public func startGsensor(param: KapHeartSDK.GsensorStartParam, response: KapHeartSDK.KapHeartManager.Response?)
   public func stopGsensor(response: KapHeartSDK.KapHeartManager.Response?)
+  public func bindUuid(uuid: Swift.String, response: KapHeartSDK.KapHeartManager.Response?)
+  public func unbindUuid(response: KapHeartSDK.KapHeartManager.Response?)
+  public func setPowerMode(mode: Swift.Int, response: KapHeartSDK.KapHeartManager.Response?)
+  public func setPowerCameraParam(_ param: KapHeartSDK.PowerCameraParam, response: KapHeartSDK.KapHeartManager.Response?)
+  public func stopPowerPreview(response: KapHeartSDK.KapHeartManager.Response?)
   @objc deinit
 }
-public protocol ICommandChannel {
-  typealias Response = (_ isSuccessed: Swift.Bool, _ data: Foundation.Data?) -> Swift.Void
-  typealias ResponseBlock<R> = (_ isSuccessed: Swift.Bool, _ data: R?) -> Swift.Void where R : Swift.Decodable
-  typealias ProgressBlock = (_ total: Swift.Int, _ uploaded: Swift.Int) -> Swift.Void
-  typealias CompleteBlock = (_ error: (any Swift.Error)?) -> Swift.Void
-  func sendCommand(cmd: Swift.UInt8, param: Foundation.Data?, response: Self.Response?)
-  func sendCommand(cmd: Swift.UInt8, param: Foundation.Data?, progress: Self.ProgressBlock?, complete: Self.CompleteBlock?, response: Self.Response?)
-  func sendCommandWithJson<P, R>(cmd: Swift.UInt8, param: P?, response: Self.ResponseBlock<R>?) where P : Swift.Encodable, R : Swift.Decodable
-  func sendResponse(seqNum: Swift.UInt16, isAck: Swift.Bool, param: Foundation.Data?) -> Swift.Bool
-  func sendResponseWithJson<P>(seqNum: Swift.UInt16, isAck: Swift.Bool, param: P?) -> Swift.Bool where P : Swift.Encodable
-}
-extension KapHeartSDK.MetadataType : Swift.Equatable {}
-extension KapHeartSDK.MetadataType : Swift.Hashable {}
-extension KapHeartSDK.MetadataType : Swift.RawRepresentable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.Equatable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.Hashable {}
 extension KapHeartSDK.CameraCaptureProfile : Swift.RawRepresentable {}
+extension KapHeartSDK.GC2607Profile : Swift.Equatable {}
+extension KapHeartSDK.GC2607Profile : Swift.Hashable {}
+extension KapHeartSDK.GC2607Profile : Swift.RawRepresentable {}
+extension KapHeartSDK.OV02B10Profile : Swift.Equatable {}
+extension KapHeartSDK.OV02B10Profile : Swift.Hashable {}
+extension KapHeartSDK.OV02B10Profile : Swift.RawRepresentable {}
+extension KapHeartSDK.MetadataType : Swift.Equatable {}
+extension KapHeartSDK.MetadataType : Swift.Hashable {}
+extension KapHeartSDK.MetadataType : Swift.RawRepresentable {}
 extension KapHeartSDK.KapErrorCode : Swift.Equatable {}
 extension KapHeartSDK.KapErrorCode : Swift.Hashable {}
 extension KapHeartSDK.KapErrorCode : Swift.RawRepresentable {}
