@@ -10,43 +10,43 @@
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GDfWqyPygIkFg5ebYWadPEOHT1Q=
+		mmqeF00stmyng+lzIvS4gYxlHkM=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OHlJ9Tmm4cd7d7s8ZgPUzIPhPMs=
+		xSVeVe7uzZ67K6C7gsgaA8fyqEM=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		f+XDiUqbuZK4ZGy01oWaIXpWOQE=
+		elsb4U9KQCZeiW7AHIKbr+WepzA=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OHlJ9Tmm4cd7d7s8ZgPUzIPhPMs=
+		xSVeVe7uzZ67K6C7gsgaA8fyqEM=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AxD0Brv2TXp/QduieBj9MHAg+pc=
+		Fh9m/+imzEtf+7Xs27XIQrAjDQc=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GDfWqyPygIkFg5ebYWadPEOHT1Q=
+		mmqeF00stmyng+lzIvS4gYxlHkM=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qSZr9+kdIFcyKAifxNqqF8zagSk=
+		diyAQkXXdN5SVsCsMWun7WVsnTs=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9HEdqIfd1yaEehFFGQjXKH74VKw=
+		YXbUdbfoUlbh1QTQk4oruSh1y7o=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qSZr9+kdIFcyKAifxNqqF8zagSk=
+		diyAQkXXdN5SVsCsMWun7WVsnTs=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		r3KcJJTcywOEskcfewunk7wR5U0=
+		rZ88gSNnMTkdDcxo89FP9EN2A5U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jZHsveMtSyW4Gdoy9jlOPcVYL/OnQh+dK2ipRX3qCSU=
+			dAZFXiaB6uGPM50xehx/TDWee6vUWkYhLuRdMpnN6QY=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HfkjcKunFex5VXBsj5BYwGLIviZRInFu2WmcXNoE2ks=
+			AyLr2ykqBmuoEElTWUEE/LLsaH+23UURq4Bb+cP7qW0=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JdExHn1Opk51yj+fZIVpqctMSAmVQGszILQWffswDUw=
+			U7T7g6Llp0sFw7xIwu1dIb0fs8XeFj6G4oXqWd7AgII=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HfkjcKunFex5VXBsj5BYwGLIviZRInFu2WmcXNoE2ks=
+			AyLr2ykqBmuoEElTWUEE/LLsaH+23UURq4Bb+cP7qW0=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HXvjhFs74vFfuXbsF0WPnk80XzICOlsVQt5n4tJvOhI=
+			BVk9eBcqZRITeRLOatGd3KOnYdtuoE+JCVvnud5gUkI=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jZHsveMtSyW4Gdoy9jlOPcVYL/OnQh+dK2ipRX3qCSU=
+			dAZFXiaB6uGPM50xehx/TDWee6vUWkYhLuRdMpnN6QY=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xwMwGpq132MQqQuwH3t/Jm7SYqRfBshQ6/t2ygNh+eI=
+			eubocphQMU0uCawvXEpPuMPg4JXlPPUnI1Y9Opg4sEg=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yEHvmU6A7p78LzuDJtwos2euTIgbG3S5RljWEf00T6w=
+			T2MleQs6FKj5Hd34oLyCvDyB2eN3vGxEGpOFdJFRdU0=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xwMwGpq132MQqQuwH3t/Jm7SYqRfBshQ6/t2ygNh+eI=
+			eubocphQMU0uCawvXEpPuMPg4JXlPPUnI1Y9Opg4sEg=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GBbqT7cwJof5wMFv1i3/Dg1Ti9DqUJmCoFKgB4DQOBk=
+			NsZ2JvbHoNTL1nQO0XxqMc7h+CW73J6WJlvxX9UqwuU=
 			</data>
 		</dict>
 	</dict>

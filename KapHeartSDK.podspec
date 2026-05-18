@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "KapHeartSDK"
-  spec.version      = "1.1.1"
+  spec.version      = "1.1.3"
   spec.summary      = "KapHeartSDK 是一款提供智能吊坠连接功能的SDK"
 
   # 这里的 description 必须比 summary 长，否则验证会报错
