@@ -2413,6 +2413,716 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "KapOtaStage",
+        "printedName": "KapOtaStage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "bleNegotiating",
+            "printedName": "bleNegotiating",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO14bleNegotiatingyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO14bleNegotiatingyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endpointResolved",
+            "printedName": "endpointResolved",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> (Swift.String, Swift.UInt16) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.UInt16) -> KapHeartSDK.KapOtaStage",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(host: Swift.String, port: Swift.UInt16)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt16",
+                            "printedName": "Swift.UInt16",
+                            "usr": "s:s6UInt16V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO16endpointResolvedyACSS_s6UInt16VtcACmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO16endpointResolvedyACSS_s6UInt16VtcACmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "socketConnecting",
+            "printedName": "socketConnecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO16socketConnectingyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO16socketConnectingyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "socketReady",
+            "printedName": "socketReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO11socketReadyyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO11socketReadyyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startSignalSent",
+            "printedName": "startSignalSent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> (Swift.Int) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> KapHeartSDK.KapOtaStage",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(fileSize: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO15startSignalSentyACSi_tcACmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO15startSignalSentyACSi_tcACmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serverReady",
+            "printedName": "serverReady",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO11serverReadyyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO11serverReadyyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pushing",
+            "printedName": "pushing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> (Swift.Int, Swift.Int) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Int) -> KapHeartSDK.KapOtaStage",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(sent: Swift.Int, total: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO7pushingyACSi_SitcACmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO7pushingyACSi_SitcACmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pushFinished",
+            "printedName": "pushFinished",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO12pushFinishedyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO12pushFinishedyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endSignalSent",
+            "printedName": "endSignalSent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO13endSignalSentyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO13endSignalSentyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceConfirmedReceived",
+            "printedName": "deviceConfirmedReceived",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> (Swift.Int) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> KapHeartSDK.KapOtaStage",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(fileSize: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO23deviceConfirmedReceivedyACSi_tcACmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO23deviceConfirmedReceivedyACSi_tcACmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endOtaAcked",
+            "printedName": "endOtaAcked",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO03endD5AckedyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO03endD5AckedyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "upgradeTriggered",
+            "printedName": "upgradeTriggered",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO16upgradeTriggeredyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO16upgradeTriggeredyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> (Swift.String, Swift.String) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String) -> KapHeartSDK.KapOtaStage",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(at: Swift.String, message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO6failedyACSS_SStcACmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO6failedyACSS_SStcACmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK0A8OtaStageO5titleSSvp",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO5titleSSvp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0A8OtaStageO5titleSSvg",
+                "mangledName": "$s11KapHeartSDK0A8OtaStageO5titleSSvg",
+                "moduleName": "KapHeartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11KapHeartSDK0A8OtaStageO",
+        "mangledName": "$s11KapHeartSDK0A8OtaStageO",
+        "moduleName": "KapHeartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "KapHeartManager",
         "printedName": "KapHeartManager",
         "children": [
@@ -2905,6 +3615,153 @@
           },
           {
             "kind": "Var",
+            "name": "otaStageHandler",
+            "printedName": "otaStageHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((KapHeartSDK.KapOtaStage) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KapHeartSDK.KapOtaStage) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK0aB7ManagerC15otaStageHandleryAA0a3OtaF0OcSgvp",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC15otaStageHandleryAA0a3OtaF0OcSgvp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((KapHeartSDK.KapOtaStage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(KapHeartSDK.KapOtaStage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KapOtaStage",
+                            "printedName": "KapHeartSDK.KapOtaStage",
+                            "usr": "s:11KapHeartSDK0A8OtaStageO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB7ManagerC15otaStageHandleryAA0a3OtaF0OcSgvg",
+                "mangledName": "$s11KapHeartSDK0aB7ManagerC15otaStageHandleryAA0a3OtaF0OcSgvg",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((KapHeartSDK.KapOtaStage) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(KapHeartSDK.KapOtaStage) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "KapOtaStage",
+                            "printedName": "KapHeartSDK.KapOtaStage",
+                            "usr": "s:11KapHeartSDK0A8OtaStageO"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB7ManagerC15otaStageHandleryAA0a3OtaF0OcSgvs",
+                "mangledName": "$s11KapHeartSDK0aB7ManagerC15otaStageHandleryAA0a3OtaF0OcSgvs",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB7ManagerC15otaStageHandleryAA0a3OtaF0OcSgvM",
+                "mangledName": "$s11KapHeartSDK0aB7ManagerC15otaStageHandleryAA0a3OtaF0OcSgvM",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isUploadStreamRunning",
             "printedName": "isUploadStreamRunning",
             "children": [
@@ -2939,6 +3796,47 @@
                 "declKind": "Accessor",
                 "usr": "s:11KapHeartSDK0aB7ManagerC21isUploadStreamRunningSbvg",
                 "mangledName": "$s11KapHeartSDK0aB7ManagerC21isUploadStreamRunningSbvg",
+                "moduleName": "KapHeartSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCameraCapturing",
+            "printedName": "isCameraCapturing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK0aB7ManagerC17isCameraCapturingSbvp",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC17isCameraCapturingSbvp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB7ManagerC17isCameraCapturingSbvg",
+                "mangledName": "$s11KapHeartSDK0aB7ManagerC17isCameraCapturingSbvg",
                 "moduleName": "KapHeartSDK",
                 "accessorKind": "get"
               }
@@ -13829,6 +14727,27 @@
       "offset": 462,
       "length": 4,
       "value": "0x03"
+    },
+    {
+      "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Core\/SocketFileUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1580,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Core\/SocketFileUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1610,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Core\/SocketFileUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1646,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Core\/CommandChannel.swift",

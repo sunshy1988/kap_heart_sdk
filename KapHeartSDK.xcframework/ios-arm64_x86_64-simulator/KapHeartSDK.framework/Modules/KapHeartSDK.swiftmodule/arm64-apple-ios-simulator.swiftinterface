@@ -96,6 +96,24 @@ extension Foundation.NSNotification.Name {
   public static let kapOperationStateChanged: Foundation.Notification.Name
 }
 public let KapOperationStateKey: Swift.String
+public enum KapOtaStage {
+  case bleNegotiating
+  case endpointResolved(host: Swift.String, port: Swift.UInt16)
+  case socketConnecting
+  case socketReady
+  case startSignalSent(fileSize: Swift.Int)
+  case serverReady
+  case pushing(sent: Swift.Int, total: Swift.Int)
+  case pushFinished
+  case endSignalSent
+  case deviceConfirmedReceived(fileSize: Swift.Int)
+  case endOtaAcked
+  case upgradeTriggered
+  case failed(at: Swift.String, message: Swift.String)
+  public var title: Swift.String {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class KapHeartManager {
   public var commandChannel: (any KapHeartSDK.ICommandChannel)? {
     get
@@ -107,7 +125,11 @@ public let KapOperationStateKey: Swift.String
   weak public var delegate: (any KapHeartSDK.KapHeartManagerDelegate)?
   weak public var fileReceiver: (any KapHeartSDK.FileReceiver)?
   weak public var gsensorDataReceiver: (any KapHeartSDK.GsensorDataReceiver)?
+  public var otaStageHandler: ((KapHeartSDK.KapOtaStage) -> Swift.Void)?
   public var isUploadStreamRunning: Swift.Bool {
+    get
+  }
+  public var isCameraCapturing: Swift.Bool {
     get
   }
   public func startScanDevice() -> KapHeartSDK.KapErrorCode
