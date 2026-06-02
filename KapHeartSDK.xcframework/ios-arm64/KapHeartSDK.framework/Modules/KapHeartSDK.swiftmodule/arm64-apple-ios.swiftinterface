@@ -41,6 +41,9 @@ public protocol FileReceiver : AnyObject {
 public protocol GsensorDataReceiver : AnyObject {
   func didReceivedGsensorData(data: KapHeartSDK.SensorData)
 }
+public protocol WearStatusReceiver : AnyObject {
+  func didReceivedWearStatus(isWearing: Swift.Bool)
+}
 public enum KapReconnectState : Swift.Equatable {
   case idle
   case waitingBluetooth
@@ -125,6 +128,7 @@ public enum KapOtaStage {
   weak public var delegate: (any KapHeartSDK.KapHeartManagerDelegate)?
   weak public var fileReceiver: (any KapHeartSDK.FileReceiver)?
   weak public var gsensorDataReceiver: (any KapHeartSDK.GsensorDataReceiver)?
+  weak public var wearStatusReceiver: (any KapHeartSDK.WearStatusReceiver)?
   public var otaStageHandler: ((KapHeartSDK.KapOtaStage) -> Swift.Void)?
   public var isUploadStreamRunning: Swift.Bool {
     get
@@ -164,6 +168,7 @@ public enum KapOtaStage {
   public func vibControlStop(response: KapHeartSDK.KapHeartManager.Response?)
   public func startGsensor(param: KapHeartSDK.GsensorStartParam, response: KapHeartSDK.KapHeartManager.Response?)
   public func stopGsensor(response: KapHeartSDK.KapHeartManager.Response?)
+  public func factoryReset(response: KapHeartSDK.KapHeartManager.Response?)
   public func bindUuid(uuid: Swift.String, response: KapHeartSDK.KapHeartManager.Response?)
   public func unbindUuid(response: KapHeartSDK.KapHeartManager.Response?)
   public func setMode(mode: KapHeartSDK.PowerMode, response: KapHeartSDK.KapHeartManager.Response?)
@@ -274,6 +279,11 @@ public struct SensorData : Swift.Codable {
   public var x: Swift.Int16
   public var y: Swift.Int16
   public var z: Swift.Int16
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WearStatusData : Swift.Codable {
+  public var wearStatus: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

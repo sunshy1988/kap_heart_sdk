@@ -1071,6 +1071,65 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "WearStatusReceiver",
+        "printedName": "WearStatusReceiver",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didReceivedWearStatus",
+            "printedName": "didReceivedWearStatus(isWearing:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK18WearStatusReceiverP011didReceiveddE09isWearingySb_tF",
+            "mangledName": "$s11KapHeartSDK18WearStatusReceiverP011didReceiveddE09isWearingySb_tF",
+            "moduleName": "KapHeartSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : KapHeartSDK.WearStatusReceiver>",
+            "sugared_genericSig": "<Self where Self : KapHeartSDK.WearStatusReceiver>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11KapHeartSDK18WearStatusReceiverP",
+        "mangledName": "$s11KapHeartSDK18WearStatusReceiverP",
+        "moduleName": "KapHeartSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "KapReconnectState",
         "printedName": "KapReconnectState",
         "children": [
@@ -3615,6 +3674,110 @@
           },
           {
             "kind": "Var",
+            "name": "wearStatusReceiver",
+            "printedName": "wearStatusReceiver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any KapHeartSDK.WearStatusReceiver)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK0aB7ManagerC18wearStatusReceiverAA04WearfG0_pSgvp",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC18wearStatusReceiverAA04WearfG0_pSgvp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any KapHeartSDK.WearStatusReceiver)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WearStatusReceiver",
+                        "printedName": "any KapHeartSDK.WearStatusReceiver",
+                        "usr": "s:11KapHeartSDK18WearStatusReceiverP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB7ManagerC18wearStatusReceiverAA04WearfG0_pSgvg",
+                "mangledName": "$s11KapHeartSDK0aB7ManagerC18wearStatusReceiverAA04WearfG0_pSgvg",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any KapHeartSDK.WearStatusReceiver)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WearStatusReceiver",
+                        "printedName": "any KapHeartSDK.WearStatusReceiver",
+                        "usr": "s:11KapHeartSDK18WearStatusReceiverP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB7ManagerC18wearStatusReceiverAA04WearfG0_pSgvs",
+                "mangledName": "$s11KapHeartSDK0aB7ManagerC18wearStatusReceiverAA04WearfG0_pSgvs",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK0aB7ManagerC18wearStatusReceiverAA04WearfG0_pSgvM",
+                "mangledName": "$s11KapHeartSDK0aB7ManagerC18wearStatusReceiverAA04WearfG0_pSgvM",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "otaStageHandler",
             "printedName": "otaStageHandler",
             "children": [
@@ -5193,6 +5356,53 @@
             "declKind": "Func",
             "usr": "s:11KapHeartSDK0aB7ManagerC11stopGsensor8responseyyAA0A9ErrorCodeOcSg_tF",
             "mangledName": "$s11KapHeartSDK0aB7ManagerC11stopGsensor8responseyyAA0A9ErrorCodeOcSg_tF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "factoryReset",
+            "printedName": "factoryReset(response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((KapHeartSDK.KapErrorCode) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KapHeartSDK.KapErrorCode) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapErrorCode",
+                        "printedName": "KapHeartSDK.KapErrorCode",
+                        "usr": "s:11KapHeartSDK0A9ErrorCodeO"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK0aB7ManagerC12factoryReset8responseyyAA0A9ErrorCodeOcSg_tF",
+            "mangledName": "$s11KapHeartSDK0aB7ManagerC12factoryReset8responseyyAA0A9ErrorCodeOcSg_tF",
             "moduleName": "KapHeartSDK",
             "declAttributes": [
               "AccessControl",
@@ -10104,6 +10314,188 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "WearStatusData",
+        "printedName": "WearStatusData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "wearStatus",
+            "printedName": "wearStatus",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11KapHeartSDK14WearStatusDataV04wearE0Sivp",
+            "mangledName": "$s11KapHeartSDK14WearStatusDataV04wearE0Sivp",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK14WearStatusDataV04wearE0Sivg",
+                "mangledName": "$s11KapHeartSDK14WearStatusDataV04wearE0Sivg",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK14WearStatusDataV04wearE0Sivs",
+                "mangledName": "$s11KapHeartSDK14WearStatusDataV04wearE0Sivs",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11KapHeartSDK14WearStatusDataV04wearE0SivM",
+                "mangledName": "$s11KapHeartSDK14WearStatusDataV04wearE0SivM",
+                "moduleName": "KapHeartSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WearStatusData",
+                "printedName": "KapHeartSDK.WearStatusData",
+                "usr": "s:11KapHeartSDK14WearStatusDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11KapHeartSDK14WearStatusDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11KapHeartSDK14WearStatusDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "KapHeartSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11KapHeartSDK14WearStatusDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11KapHeartSDK14WearStatusDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "KapHeartSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11KapHeartSDK14WearStatusDataV",
+        "mangledName": "$s11KapHeartSDK14WearStatusDataV",
+        "moduleName": "KapHeartSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "AudioStartParam",
         "printedName": "AudioStartParam",
         "children": [
@@ -14528,147 +14920,154 @@
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 732,
+      "offset": 734,
       "length": 4,
       "value": "0x14"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 772,
+      "offset": 774,
       "length": 4,
       "value": "0x1d"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 807,
+      "offset": 809,
       "length": 4,
       "value": "0x1e"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 847,
+      "offset": 849,
       "length": 4,
       "value": "0x17"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 885,
+      "offset": 887,
       "length": 4,
       "value": "0x18"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 917,
+      "offset": 919,
       "length": 4,
       "value": "0x19"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 949,
+      "offset": 951,
       "length": 4,
       "value": "0x1a"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 988,
+      "offset": 990,
       "length": 4,
       "value": "0x1b"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1028,
+      "offset": 1030,
       "length": 4,
       "value": "0x1c"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1058,
+      "offset": 1060,
       "length": 4,
       "value": "0x24"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1088,
+      "offset": 1090,
       "length": 4,
       "value": "0x25"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1123,
+      "offset": 1125,
       "length": 4,
       "value": "0x26"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1154,
+      "offset": 1156,
       "length": 4,
       "value": "0x27"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1190,
+      "offset": 1192,
       "length": 4,
       "value": "0x28"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1222,
+      "offset": 1224,
       "length": 4,
       "value": "0x29"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1259,
+      "offset": 1261,
       "length": 4,
       "value": "0x2a"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1289,
+      "offset": 1291,
       "length": 4,
       "value": "0x1f"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1585,
+      "offset": 1587,
       "length": 4,
       "value": "0x20"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1614,
+      "offset": 1616,
       "length": 4,
       "value": "0x21"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1657,
+      "offset": 1659,
       "length": 4,
       "value": "0x22"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 1681,
+      "offset": 1693,
+      "length": 4,
+      "value": "0x23"
+    },
+    {
+      "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/CommandApi.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1717,
       "length": 4,
       "value": "0xFC"
     },
@@ -14801,56 +15200,56 @@
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2712,
+      "offset": 2811,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2748,
+      "offset": 2847,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2797,
+      "offset": 2896,
       "length": 2,
       "value": "-2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3294,
+      "offset": 3393,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3345,
+      "offset": 3444,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 3400,
+      "offset": 3499,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3738,
+      "offset": 3837,
       "length": 26,
       "value": "\"KapOperationStateChanged\""
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/KapHeartSDK.swift",
       "kind": "StringLiteral",
-      "offset": 3803,
+      "offset": 3902,
       "length": 16,
       "value": "\"operationState\""
     },
@@ -15144,182 +15543,182 @@
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 7723,
+      "offset": 7883,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 7745,
+      "offset": 7905,
       "length": 5,
       "value": "16000"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 7768,
+      "offset": 7928,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 7787,
+      "offset": 7947,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 8031,
+      "offset": 8191,
       "length": 4,
       "value": "0x05"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9172,
+      "offset": 9332,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9183,
+      "offset": 9343,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9202,
+      "offset": 9362,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9220,
+      "offset": 9380,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9238,
+      "offset": 9398,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9256,
+      "offset": 9416,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9274,
+      "offset": 9434,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9292,
+      "offset": 9452,
       "length": 8,
       "value": "7"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9310,
+      "offset": 9470,
       "length": 8,
       "value": "8"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9406,
+      "offset": 9566,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9417,
+      "offset": 9577,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9436,
+      "offset": 9596,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9454,
+      "offset": 9614,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9472,
+      "offset": 9632,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9490,
+      "offset": 9650,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9607,
+      "offset": 9767,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9631,
+      "offset": 9791,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9654,
+      "offset": 9814,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9674,
+      "offset": 9834,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9740,
+      "offset": 9900,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9763,
+      "offset": 9923,
       "length": 1,
       "value": "1"
     }
