@@ -2517,6 +2517,46 @@
           },
           {
             "kind": "Var",
+            "name": "packageAlreadyExists",
+            "printedName": "packageAlreadyExists",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KapHeartSDK.KapOtaStage.Type) -> KapHeartSDK.KapOtaStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KapOtaStage",
+                    "printedName": "KapHeartSDK.KapOtaStage",
+                    "usr": "s:11KapHeartSDK0A8OtaStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KapHeartSDK.KapOtaStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KapOtaStage",
+                        "printedName": "KapHeartSDK.KapOtaStage",
+                        "usr": "s:11KapHeartSDK0A8OtaStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11KapHeartSDK0A8OtaStageO20packageAlreadyExistsyA2CmF",
+            "mangledName": "$s11KapHeartSDK0A8OtaStageO20packageAlreadyExistsyA2CmF",
+            "moduleName": "KapHeartSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "endpointResolved",
             "printedName": "endpointResolved",
             "children": [
@@ -15466,259 +15506,259 @@
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4848,
+      "offset": 5454,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4859,
+      "offset": 5465,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4886,
+      "offset": 5492,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4912,
+      "offset": 5518,
       "length": 16,
       "value": "3"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4938,
+      "offset": 5544,
       "length": 16,
       "value": "4"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4964,
+      "offset": 5570,
       "length": 16,
       "value": "5"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 4990,
+      "offset": 5596,
       "length": 16,
       "value": "6"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5016,
+      "offset": 5622,
       "length": 16,
       "value": "7"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 5042,
+      "offset": 5648,
       "length": 16,
       "value": "8"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 6121,
+      "offset": 6727,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 6696,
+      "offset": 7302,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 7883,
+      "offset": 8489,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 7905,
+      "offset": 8511,
       "length": 5,
       "value": "16000"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 7928,
+      "offset": 8534,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 7947,
+      "offset": 8553,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 8191,
+      "offset": 8797,
       "length": 4,
       "value": "0x05"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9332,
+      "offset": 9938,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9343,
+      "offset": 9949,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9362,
+      "offset": 9968,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9380,
+      "offset": 9986,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9398,
+      "offset": 10004,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9416,
+      "offset": 10022,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9434,
+      "offset": 10040,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9452,
+      "offset": 10058,
       "length": 8,
       "value": "7"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9470,
+      "offset": 10076,
       "length": 8,
       "value": "8"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9566,
+      "offset": 10172,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9577,
+      "offset": 10183,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9596,
+      "offset": 10202,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9614,
+      "offset": 10220,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9632,
+      "offset": 10238,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9650,
+      "offset": 10256,
       "length": 8,
       "value": "5"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9767,
+      "offset": 10373,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9791,
+      "offset": 10397,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9814,
+      "offset": 10420,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9834,
+      "offset": 10440,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9900,
+      "offset": 10506,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/happy\/Desktop\/KapHeartSample\/KapHeartSDK\/Heart\/Entitys.swift",
       "kind": "IntegerLiteral",
-      "offset": 9923,
+      "offset": 10529,
       "length": 1,
       "value": "1"
     }

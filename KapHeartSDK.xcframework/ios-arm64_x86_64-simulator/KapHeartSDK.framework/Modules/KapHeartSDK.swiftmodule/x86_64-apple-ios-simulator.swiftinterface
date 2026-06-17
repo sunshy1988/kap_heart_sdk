@@ -101,6 +101,7 @@ extension Foundation.NSNotification.Name {
 public let KapOperationStateKey: Swift.String
 public enum KapOtaStage {
   case bleNegotiating
+  case packageAlreadyExists
   case endpointResolved(host: Swift.String, port: Swift.UInt16)
   case socketConnecting
   case socketReady
