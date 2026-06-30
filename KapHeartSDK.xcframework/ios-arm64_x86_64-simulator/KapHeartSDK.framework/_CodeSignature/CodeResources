@@ -10,11 +10,11 @@
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		j2kRQMsA/PRD6+NTZCDrPqY6kvs=
+		TqF7hOkUtxXGVTJEuC2gDcqfy4A=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jPCCVDgMWqufoCB4gDgR+mUspKE=
+		DitniZ7QLln0z/hzOAUB80jPmgQ=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jPCCVDgMWqufoCB4gDgR+mUspKE=
+		DitniZ7QLln0z/hzOAUB80jPmgQ=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IvoAeC1w2oBd/cYf9hBximW97/Y=
+		RCmIMszA0I3wQngtdzdNfjsAAWY=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		j2kRQMsA/PRD6+NTZCDrPqY6kvs=
+		TqF7hOkUtxXGVTJEuC2gDcqfy4A=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		sWnveFO3eeVDKFx8TURtX8Mqk70=
+		CANg36DESWPb+0of3VjeB1bs4cA=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		sWnveFO3eeVDKFx8TURtX8Mqk70=
+		CANg36DESWPb+0of3VjeB1bs4cA=
 		</data>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wPA1ojvXIwZtOvdVKRQr7C7lr84=
+		yIdH6+fnMzD+y0kMYNSAJPX8C1A=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kEwlk2jhdyh25ZhWiIHNpU0ua4fKyYP89aDIJmryG4M=
+			3Pd3MGo2K2eJkdWldA3BfUnrX8BqC/2TxQIE440VKsI=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v/K7jpPgKtWmfGRjPfTj/Mw4P5aOEfMirqF3OLKQfcU=
+			9i28avALiKQR4KolAwQqiK7SyBc7HwYiQW3PFgBDhqM=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -76,28 +76,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v/K7jpPgKtWmfGRjPfTj/Mw4P5aOEfMirqF3OLKQfcU=
+			9i28avALiKQR4KolAwQqiK7SyBc7HwYiQW3PFgBDhqM=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ikjzji9ged24V+2NT8Sqx4YtrPLDj9mTVBFIJR1Ad8s=
+			hZ4N/dDqjxKCD7lrQEZ9s0rlLUPNtqnzwcPVd0TW9+I=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kEwlk2jhdyh25ZhWiIHNpU0ua4fKyYP89aDIJmryG4M=
+			3Pd3MGo2K2eJkdWldA3BfUnrX8BqC/2TxQIE440VKsI=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IvjqFds17NSeSaJj0VQbWXW70QNjIuLxIpBmnhstzAs=
+			Hica1N5NHEpsW3B/0gnsGhAm0YBwRbI6YJOJHmNUgHk=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IvjqFds17NSeSaJj0VQbWXW70QNjIuLxIpBmnhstzAs=
+			Hica1N5NHEpsW3B/0gnsGhAm0YBwRbI6YJOJHmNUgHk=
 			</data>
 		</dict>
 		<key>Modules/KapHeartSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iMj+fBG2CMBseWeZrKIPNxm8G/IXRhQR0mDgRZBkEMQ=
+			u294a+oBgQmnnzz2rZ0EpbypB41iiapSt4vQkP6iRHQ=
 			</data>
 		</dict>
 	</dict>

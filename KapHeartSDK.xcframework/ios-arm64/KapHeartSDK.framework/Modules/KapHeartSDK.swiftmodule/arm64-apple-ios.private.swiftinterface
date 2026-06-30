@@ -381,7 +381,7 @@ public enum CaptureStatus : Swift.Int, Swift.Codable {
 public struct OperationState : Swift.Codable {
   public let wearStatus: Swift.Int
   public let captureStatus: Swift.Int
-  public let privacyMode: Swift.Int
+  public let cur_mode: Swift.Int
   public let storageUsedPct: Swift.Int
   public let imageCount: Swift.Int
   public let wifiStatus: Swift.Int
@@ -397,10 +397,10 @@ public struct OperationState : Swift.Codable {
   public var isCharging: Swift.Bool {
     get
   }
-  public var isPrivacyMode: Swift.Bool {
+  public var isCurMode: Swift.Bool {
     get
   }
-  public init(wearStatus: Swift.Int, captureStatus: Swift.Int, privacyMode: Swift.Int, storageUsedPct: Swift.Int, imageCount: Swift.Int, wifiStatus: Swift.Int, batteryPct: Swift.Int, charging: Swift.Int, temperature: Swift.Double)
+  public init(wearStatus: Swift.Int, captureStatus: Swift.Int, cur_mode: Swift.Int, storageUsedPct: Swift.Int, imageCount: Swift.Int, wifiStatus: Swift.Int, batteryPct: Swift.Int, charging: Swift.Int, temperature: Swift.Double)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
